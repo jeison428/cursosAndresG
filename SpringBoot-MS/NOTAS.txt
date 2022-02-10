@@ -1,0 +1,49 @@
+Microservicios
+
+Conjunto de procesos independientes que trabajan en un servidor independiente usando un puerto unico dentro del servidor, pero comunicandose con otros microservicios mediante el protocolo http y servicios REST. Los microservicios no necesitan saber las tecnologias en las cuales estan implementados los otros microservicios con los cuales se comunican. De esta forma cada microservicio puede desplegarse, testearse, escalar, monitorear y mantener de forma independiente de los demas microservicios con los que se comunica.
+
+Ribbon (Balanceador de carga)
+se agrega la anotacion @RibbonClient(name="nombre-MicroServicio-al-que-se-va-a-conectar") en la clase principal del proyecto de spring (el proyecto que consume los servicios de otro microservicio, osea el cliente). Dentro del archivo application.propierties de este mismo proyecto cliente, vamos a agregar una linea en la cual vamos a listar las rutas de los microservicios que vamos a consumir, asi:
+nombre-MicroServicio-al-que-se-va-a-conectar.ribbon.listOfServers=localhost:8001,localhost:9001
+
+El nombre del inicio de esta ultima linea es el mismo nombre que se usa en la anotacion @RibbonClient y es el nombre que se le dio al microservicio que es consumido en su archivo application.propierties.
+
+Para usar este tipo de balanceador de carga sin usar Feing (como se hizo en lo explicado anteriormente), debemos realizar los siguientes pasos:
+
+- en la clase AppConfig creada en el paquete principal de nuestro microservicio cliente, vamos a poner la anotacion @LoadBalance 
+- ahora vamos hasta nuestra clase service, que se implemento con rest template y vamos a poner el nombre del microservicio servidor (Este nombre ya esta definido en el archivo application.propierties del microservicio servidor) en donde tenemos la ruta URL para consumir el servicio, pero solo lo que esta entre el http:// y el siguiente /, por ejemplo http://localhost:8080/xxxx lo cambiamos por http://nombre-microservicio-servidor/xxxx
+
+
+ORM
+es un modelo de programacion que te permite mapear un modelo de base de datos relacional sobre una estructura logica de entidades para simplificar y acelerar el desarrollo
+
+
+2abe83f
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+CURSO ANGULAR Y MICROSERVICIOS
+
+ANGULAR
+
+obserbables parte del api RxJs
+
+nos permite integrar programacion reactiva con angular, osea, flujos que pueden venir no de forma inmediata, pueden tener un delay o algun tiempo de espera.
+
+la idea es trabajar con eventos, subscribirnos y estar pendiente esperando a que se emitan los datos, los streams, entonces cuando se emite se implementa el codigo del observador o centinela, este esta pendiente escuchando y se encarga de ejecutar algo y realizar un proceso cuando se reciben los datos, el observador es el centinela (el codigo que maneja estos datos, o que los recibe)el observable es el evento que emite estos datos.
+
+el codigo reacciona a cualquier elemento del flujo o secuencia de elementos que se este emitiendo en este observable y tenemos que subscribirnos,
+
+observable es asincrono, para trabajar tareas asincronas:
+	- peticiones http
+	- consumo api rest a un back end
+	- similar a peticiones ajax nativas
+
+ 
+
+SPRING
+
+Cuando usar una base de datos compartida o una base de datos por cada microservicio
+
+factur algo

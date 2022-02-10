@@ -1,0 +1,24 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-ServicioProductosJApplication<servicio-productos-j>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "mainClass": "com.aprendiendo.app.productos.ServicioProductosJApplication",
+            "projectName": "servicio-productos-j",
+            "args": ""
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-ServicioItemJApplication<servicio-item-j>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "mainClass": "com.aprendiendo.app.item.ServicioItemJApplication",
+            "projectName": "servicio-item-j",
+            "args": ""
+        }
+    ]
+}

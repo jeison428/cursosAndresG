@@ -1,0 +1,64 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-MicroservicioEurekaApplication<microservicio-eureka>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "mainClass": "com.formacionbdi.microservicios.app.eureka.MicroservicioEurekaApplication",
+            "projectName": "microservicio-eureka",
+            "args": ""
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-MicroservicioUsuariosApplication<microservicio-usuarios>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "mainClass": "com.formacionbdi.microservicios.app.usuarios.MicroservicioUsuariosApplication",
+            "projectName": "microservicio-usuarios",
+            "args": ""
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-MicroservicioZuulApplication<microservicio-zuul>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "mainClass": "com.formacionbdi.microservicios.app.zuul.MicroservicioZuulApplication",
+            "projectName": "microservicio-zuul",
+            "args": ""
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-MicroservicioCursoApplication<microservicio-curso>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "mainClass": "com.formacionbdi.microservicios.app.cursos.MicroservicioCursoApplication",
+            "projectName": "microservicio-curso",
+            "args": ""
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-CommonsExamenesApplication<commons-examenes>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "mainClass": "com.formacionbdi.microservicios.commons.examenes.CommonsExamenesApplication",
+            "projectName": "commons-examenes",
+            "args": ""
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-MicroservicioExamenesApplication<microservicio-examenes>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "mainClass": "com.formacionbdi.microservicios.app.examenes.MicroservicioExamenesApplication",
+            "projectName": "microservicio-examenes",
+            "args": ""
+        }
+    ]
+}
